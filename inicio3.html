@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Happy day mother</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+    <section>
+      <h2>FELIZ DIA DE LA MADRE</h2>
+      <div class="banner">
+        <div class="blocks">
+          <a href="inicio.html"></a>
+        </div>
+        </div>
+    </section>
+
+    <script>
+      const banner = document.getElementsByClassName('banner')[0];
+      const blocks = document.getElementsByClassName('blocks');
+
+      for(var i = 1; i < 400; i++){
+        banner.innerHTML += "<div class='blocks'></div>";
+        blocks[i].style.animationDelay = `${i * 0.05}s`;
+      }
+    </script>
+
+</body>
+</html>

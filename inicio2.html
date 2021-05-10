@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Happy day mother</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <div id="text"></div>
+
+    <div class="banner_title">
+        <a href="inicio3.html" class="btn-link">
+            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+        </a>
+    </div>
+    
+    <script>
+        var i=0,text;
+        text = "DIOS ME LA BENDIGA"
+        
+
+        function typing() {
+            if(i<text.length){
+                document.getElementById('text').innerHTML += text.charAt(i);
+
+                i++;
+
+                setTimeout(typing,250);
+            }
+        }
+
+        typing();
+    </script>
+</body>
+</html>

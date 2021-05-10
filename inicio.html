@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Happy day mother</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Jhonatan</a>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">&#x1f490;Happy Mother´s Day&#x1f490;</h2>
+        <a href="inicio2.html" id="btn">Explorar &#10140;</a>
+        <a href="inicio4.html" id="btn1">Música &#x266b;</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+
+    <div class="sec" id="sec">
+        <h2>Feliz Día de la Madre</h2>
+        <p>
+            Hola Como está, espero que este muy bien, asi mismo espero que le guste este pequeño 
+            detalle el cual lo hice con mucho cariño para usted.<br><br>
+            Le deseo un Feliz día de la Madre, talvez no la conozca bien, pero se muy bien que ha 
+            sido una Buena Madre, desde que sus hijos eran bebes hasta hoy en día sé que usted ha sido
+            una madre trabajadora, apesar de las circunstacia de la vida usted ha sido una madre valiente,
+            una guerrera, una madre que da consejos, una madre que da consuelo, una madre protegedora, 
+            una madre que entiende, perdona, cuida, enseña, pero sobretodo una Madre que Ama demasiado a sus hijos/as.
+            En pocas palabras usted es una Supermamá, que Dios me la bendiga grandemente asi mismo la aprecio y que se la 
+            pase super bien en este día junto con su familia que la AMA.
+
+        </p>
+        <div class="contenedor">
+            <div class="contenedor_tarjeta">
+                <a href="http://www.falconmasters.com">
+                    <figure id="tarjeta">
+                        <img src="img/foto1.jpg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo">Feliz Día <br>de la Madre&#x1f490;</h2>
+                            <hr>
+                            <p>
+                                Porque tú formaste mis entrañas; Tú me hiciste en el vientre de mi madre.
+                                14 Te alabaré; porque formidables,maravillosas son tus obras; Estoy maravillado,
+                                Y mi alma lo sabe muy bien. <br><strong>Salmos 139:13-14</strong>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+    
+            <div class="contenedor_tarjeta">
+                <a href="http://www.falconmasters.com">
+                    <figure id="tarjeta">
+                        <img src="img/foto2.jpg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo">Feliz Día <br>de la Madre&#x1f490;</h2>
+                            <hr>
+                            <p>
+                                Ella está vestida de fuerza y dignidad y sonríe sin temor al futuro.
+                                <br><br><strong>Proverbios 31: 25</strong>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+    
+            <div class="contenedor_tarjeta">
+                <a href="http://www.falconmasters.com">
+                    <figure id="tarjeta">
+                        <img src="img/foto3.jpg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo">Feliz Día <br>de la Madre&#x1f490;</h2>
+                            <hr>
+                            <p>
+                                He aquí, herencia de Jehová son los hijos; 
+                                Cosa de estima el fruto del vientre.<br><br>
+                                <strong>Salmo 127:3</strong>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let btn1 = document.getElementById('btn1');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.05 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            btn1.style.marginTop = value * 1.5 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+    
+</body>
+</html>
